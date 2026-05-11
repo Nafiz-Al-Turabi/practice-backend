@@ -8,4 +8,4 @@ const router = express.Router();
 router.get('/', getRoot);
 router.use('/auth', authRoutes);
 
-module.exports = router;
+module.exports = router; 
