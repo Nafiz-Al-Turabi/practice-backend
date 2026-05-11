@@ -69,6 +69,7 @@ const loginUser = async (email, password) => {
       id: user.id,
       username: user.username,
       email: user.email,
+      type: user.type,
       createdAt: user.createdAt,
     },
     token,
@@ -82,6 +83,7 @@ const getCurrentUser = async (userId) => {
       id: true,
       username: true,
       email: true,
+      type: true,
       createdAt: true,
     },
   });
